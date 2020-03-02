@@ -1,0 +1,150 @@
+
+
+body{
+    background-color: grey;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 0 auto;
+}
+.header{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:stretch;
+    justify-content: space-between;
+    &__nav{
+        width:50%;
+        background-color: white;
+    }
+    &__search{
+        width:50%;
+        background-color: white;
+    }
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    &__img{
+        align-self: center;
+    }
+}
+.nav{
+    width: 50%;
+    background-color: white;
+    display:flex;
+    &__item{
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.slider{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top:10px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__item{
+        width: calc(100% - 10px);
+    }
+}
+.card-wrapper{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    margin-top:10px;
+    background-color: white;
+    width:calc(25% - 10px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    &__img{
+        width:calc(100% - 10px);
+        align-self: center;
+    }
+    &__text{
+        width: 95%;
+        align-self: center;
+    }
+    &__link{
+        align-self: flex-end;
+    }
+}
+.big-card{
+    margin-top: 10px;
+    padding-top: 5px;
+    background-color: white;
+    display: flex;
+    &__img-wrapper{
+        align-self: start;;
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        justify-content: space-evenly;
+    }
+    &__img{
+        width:calc(50% - 15px/2);
+        margin-bottom: 5px;
+    }
+    &__text{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        text-align: right;
+    }
+    
+}
+.footer{
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    display:flex;
+    &__item{
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    
+}
+
+@media (max-width: 960px){
+    .nav{
+        flex-wrap: wrap;
+    }
+    
+    .wrapper{
+        width: 480px;
+    }
+    .card{
+        width: calc(50% - 10px); 
+    }
+    .big-card{
+        &__img-wrapper{
+            width:50%;
+
+        }
+        &__text{
+            width:50%;
+        }
+    }
+}

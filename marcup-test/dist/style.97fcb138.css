@@ -1,0 +1,155 @@
+body {
+  background-color: grey;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.header__nav {
+  width: 50%;
+  background-color: white;
+}
+.header__search {
+  width: 50%;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.logo__img {
+  align-self: center;
+}
+
+.nav {
+  width: 50%;
+  background-color: white;
+  display: flex;
+}
+.nav__item {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.slider {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__item {
+  width: calc(100% - 10px);
+}
+
+.card-wrapper {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  margin-top: 10px;
+  background-color: white;
+  width: calc(25% - 10px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+.card__img {
+  width: calc(100% - 10px);
+  align-self: center;
+}
+.card__text {
+  width: 95%;
+  align-self: center;
+}
+.card__link {
+  align-self: flex-end;
+}
+
+.big-card {
+  margin-top: 10px;
+  padding-top: 5px;
+  background-color: white;
+  display: flex;
+}
+.big-card__img-wrapper {
+  align-self: start;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  justify-content: space-evenly;
+}
+.big-card__img {
+  width: calc(50% - 15px/2);
+  margin-bottom: 5px;
+}
+.big-card__text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.big-card__link {
+  text-align: right;
+}
+
+.footer {
+  margin-top: 10px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+.footer__item {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 960px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .wrapper {
+    width: 480px;
+  }
+
+  .card {
+    width: calc(50% - 10px);
+  }
+
+  .big-card__img-wrapper {
+    width: 50%;
+  }
+  .big-card__text {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
